@@ -21,7 +21,7 @@
     </script>
     <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js">
     </script>
-    <script src="https://github.com/NavyCo/Navys-Home-Page/raw/gh-pages/javascripts/Index.js">
+    <script src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/javascripts/Index.js">
     </script>
     <a tooltip="puff" underline="1" title="ha">
       test
@@ -32,14 +32,14 @@
     <a button onclick="myFunction()">Click me!</a>
 </footer>
 <style>
-  [button] {
+  a[button] {
     cursor:pointer;
   }
 </style>
 <script>
   function myFunction() {
-    var myWindow = window.open("", "MsgWindow", "");
-    var text = 'Thanks for clicking me!';
-    myWindow.document.write('<p>' text '</p>');
+	newwindow2=window.open('','name','height=auto,width=auto');
+	var tmp = newwindow2.document;
+	tmp.write("test");
   }
 </script>
