@@ -1,0 +1,10 @@
+function random_bg() {
+var myArray = ["http://images5.alphacoders.com/332/332450.jpg","http://images6.alphacoders.com/342/342942.jpg","http://images5.alphacoders.com/340/340251.jpg","http://images.alphacoders.com/211/211123.jpg","http://images6.alphacoders.com/399/399487.jpg","http://images5.alphacoders.com/430/430064.png","http://images4.alphacoders.com/149/14954.jpg","http://images3.alphacoders.com/432/4325.jpg","http://images7.alphacoders.com/312/312265.jpg","http://images7.alphacoders.com/312/312299.jpg","http://images3.alphacoders.com/116/11615.jpg","http://images.alphacoders.com/116/11603.jpg","http://images.alphacoders.com/248/248853.jpg","http://images4.alphacoders.com/432/4328.jpg","http://images4.alphacoders.com/116/11616.jpg","http://images3.alphacoders.com/266/26699.jpg","http://cloud-4.steampowered.com/ugc/685968273281912178/D3D857689A727B2BA4D0915AB73FC44E98AC851C/","http://img2.wikia.nocookie.net/__cb20100223205957/half-life/en/images/b/b7/Citadel_menu_background.jpg","http://img4.wikia.nocookie.net/__cb20090327034958/half-life/en/images/d/dd/Background_plaza.jpg","http://img1.wikia.nocookie.net/__cb20090121190025/half-life/en/images/f/f2/City_17_destroyed_Citadel_forest_view.jpg","http://img2.wikia.nocookie.net/__cb20100426153821/half-life/en/images/8/83/Strider_rubble_C17.jpg","http://www.artwallpapers.biz/GameWidescreen/Pc-Games/images/half%20life%202%20urban%20fight.jpg","http://static.wallarc.com/518f188e7415935906.jpg","http://www.wallpaperbases.com/Game-HD-Wallpaper/images/half%20life%202%20garry%20mod%2003.jpg","http://media.moddb.com/images/mods/1/10/9045/nh2c30040.jpg","http://cloud-4.steampowered.com/ugc/685968273281912178/D3D857689A727B2BA4D0915AB73FC44E98AC851C/",];
+var rand = myArray[Math.floor(Math.random() * myArray.length)];
+$('body').css('background-size','cover');
+$('body').css('background-repeat','no-repeat');
+$('body').css('background-position','top left');
+$('body').css('background-attachment','fixed');
+$('body').css('background-image','url('+rand+')');
+}
+/* make onload for it to cause random_bg ! */
