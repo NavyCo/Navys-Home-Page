@@ -19,17 +19,4 @@
 <body>
 <button id="lesen">Test</button>
 <div class="text"></div>
-<script>
-$(document).ready(function() {
-    $("body").click(function() {
-        $.ajax({
-            url : "https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/README.txt",
-            dataType: "text",
-            success : function (data) {
-                $alert(data);
-            }
-        });
-    });
-}); 
-</script>
-</body>
+<iframe src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/README.txt"></iframe>
