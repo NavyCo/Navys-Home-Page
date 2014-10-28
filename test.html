@@ -21,7 +21,7 @@
 $(document).ready(function() {
     $("#lesen").click(function() {
         $.ajax({
-            url : "readme.txt",
+            url : "https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/README.txt",
             dataType: "text",
             success : function (data) {
                 $(".text").html(data);
