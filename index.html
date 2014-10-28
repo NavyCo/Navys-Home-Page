@@ -30,17 +30,18 @@
 </html>
 <footer>
   <h3>
-    <a button onclick="myFunction()">Hi!</a>
+    <a button onclick="myFunction()">Click me!</a>
   </h3>
 </footer>
 <style>
-  a[button] {
+  [button] {
     cursor:pointer;
   }
 </style>
 <script>
-function myFunction() {
-    var myWindow = window.open("", "MsgWindow", "width=200, height=100");
-    myWindow.document.write("<p>This is 'MsgWindow'. I am 200px wide and 100px tall!</p>");
-}
+  function myFunction() {
+    var myWindow = window.open("", "MsgWindow", "");
+    var text = 'Thanks for clicking me!';
+    myWindow.document.write('<p>' text '</p>');
+  }
 </script>
