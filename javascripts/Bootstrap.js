@@ -1,4 +1,14 @@
- 	var t1 = "<span>☰</span>";
+$("span").click(function() {
+  $("nav").toggleClass("active");
+  $("li").toggleClass("active");
+  if($(this).text() == "☰") {
+    $(this).text("×");
+  }
+  else {
+    $(this).text("☰");
+  }
+})
+var t1 = "<span>☰</span>";
 var t2 = "<nav>";
 var t3 = " <ul>";
 var t4 = " <li><li class='fa fa-refresh'></li></li>"
