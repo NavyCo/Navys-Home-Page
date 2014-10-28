@@ -15,18 +15,21 @@
 <title>Test</title>
 
 <!-- Content goes below -->
+
+<body>
 <button id="lesen">Test</button>
 <div class="text"></div>
 <script>
 $(document).ready(function() {
-    $("#lesen").click(function() {
+    $("body").click(function() {
         $.ajax({
             url : "https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/README.txt",
             dataType: "text",
             success : function (data) {
-                $(".text").html(data);
+                $alert(data);
             }
         });
     });
 }); 
 </script>
+</body>
