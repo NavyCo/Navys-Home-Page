@@ -98,3 +98,145 @@ li {
 	list-style-type: none;
 }
 </style>
+<style>
+	@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Quicksand:400);
+@import url(http://fonts.googleapis.com/css?family=Raleway:300);
+
+
+.ExternalClass #ecxpulsor:hover {
+text-shadow:0 0 50px #ccc;
+}
+
+.ExternalClass hr.ecxstyle-five {
+border:0;
+height:0;
+box-shadow:0 0 10px 1px black;
+}
+
+/* Flaired edges, by Tomas Theunissen */
+hr.style-seven { height: 30px; border-style: solid; border-color: black; border-width: 1px 0 0 0; border-radius: 20px; } hr.style-seven:before { /* Not really supposed to work, but does */ display: block; content: ""; height: 30px; margin-top: -31px; border-style: solid; border-color: black; border-width: 0 0 1px 0; border-radius: 20px; }
+/* Cloud */ hr.style-five { border: 0; height: 0; /* Firefox... */ box-shadow: 0 0 10px 1px black; } hr.style-five:after { /* Not really supposed to work, but does */ content: "\00a0"; /* Prevent margin collapse */ }
+
+
+a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+
+[underline="1"] {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+[underline="1"]:hover {
+  color: #000;
+}
+[underline="1"]:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+[underline="1"]:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+a [rel='@import']
+{
+  color: green;
+}
+
+[fontawesome="1"]
+{
+  font-family:'FontAwesome';
+}
+
+body {
+  padding-top: 70px;
+}
+
+span {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 12.5px;
+  font-size: 25px;
+  color: #fff;
+  background: #333;
+  cursor: pointer;
+  z-index: 1;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  top: -75px;
+  left: 0;
+  background: #333;
+  box-shadow: 1px 0 3px 2px #333;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+nav.active {
+  top: 0;
+}
+nav ul {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+}
+nav ul li {
+  margin: 0 25px;
+  padding: 3px 0;
+  opacity: 0;
+  cursor: pointer;
+}
+nav ul li:nth-child(1) {
+  color: #ddff99;
+  transition: opacity 0.2s 0.1s ease-in;
+}
+nav ul li:nth-child(2) {
+  color: #ffdd99;
+  transition: opacity 0.2s 0.2s ease-in;
+}
+nav ul li:nth-child(3) {
+  color: #ffc699;
+  transition: opacity 0.2s 0.3s ease-in;
+}
+nav ul li:nth-child(4) {
+  color: #ffbb99;
+  transition: opacity 0.2s 0.4s ease-in;
+}
+nav ul li.active {
+  opacity: 1;
+}
+nav ul li.active:hover {
+  color: white;
+}
+nav ul li a {
+  color: white;
+}
+
+[FontAwesome="1"]
+{
+  font-family:'FontAwesome';
+}
+
+</style>
