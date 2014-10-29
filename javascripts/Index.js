@@ -101,6 +101,8 @@ effect: "clip",
 delay: 250
 }
 });
+
+
 $("span").click(function() {
 $("nav").toggleClass("active");
 $("li").toggleClass("active");
