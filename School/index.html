@@ -1,7 +1,33 @@
 <html>
+<script>
+$("span").click(function() {
+$("nav").toggleClass("active");
+$("li").toggleClass("active");
+if($(this).text() == "☰") {
+$(this).text("×");
+}
+else {
+$(this).text("☰");
+}
+})
+/* what your bootstrap should look like!
+<span>☰</span>
+<nav>
+<ul>
+<li><a>Test</a></li>
+</ul>
+</nav>
+*/
+</script>
+<style>
+li {
+list-style-type: none;
+}
+</style>
   <head>
+   <link rel="stylesheet" href="https:://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/style.css" type="text/css" />
+   <link rel="stylesheet" href="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/Bootstrap.css" type="text/css" />
   <style>
-  @import url(https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/Bootstrap.css);
   	Emoticon_JS {
   		Width: 45;
   		Height: 45;
@@ -9,10 +35,11 @@
   </style>
     <meta charset="UTF-8">
     <title>
-      Nicholas Phillips — School
+      Title...
     </title>
-    <link href="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/style.css" type="text/css" />
-      <style>
+  </head>
+  <body>
+  <style>
   	@import url(http://weloveiconfonts.com/api/?family=brandico|entypo|fontawesome|fontelico|iconicfill|iconicstroke|maki|openwebicons|typicons|zocial);
   </style>
     <!-- Must put these at the top to have JQUERY! -->
@@ -21,11 +48,11 @@
     </script>
     <script src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/javascripts/Emoticons%20V2.js">
     </script>
-    <script src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/javascripts/Footer.js">
+    <script src="https://github.com/NavyCo/Navys-Home-Page/raw/gh-pages/javascripts/Footer.js">
     </script>
     <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js">
     </script>
-    <link href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+    <link tooltip="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-1.10.2.js">
     </script>
     <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js">
@@ -37,10 +64,7 @@
 </script>
 <link src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/Bootstrap.css" type="text/css" />
 <div>
-  </head>
-  <body>
-
-<span id="boot">☰</span>
+<span>☰</span>
   <nav>
     <ul>
       <li><a title="Home" href="http://navyco.github.io/Navys-Home-Page/"><i class="fa fa-2x fa-home"></i></a></li>
@@ -50,48 +74,3 @@
     </ul>
   </nav>
 </div>
-<!-- End of the BootStrap -->
-    <body>
-  </body>
-</html>
-<footer>
-  <h2>Click the "<a title="Symbol for the BootStrap" underline="1" href="">☰</a>" above!</h2>
-</footer>
-<style>
-  a[button] {
-    cursor:pointer;
-  }
-</style>
-<script>
-  function myFunction() {
-	newwindow2=window.open('','name','height=auto,width=auto');
-	var tmp = newwindow2.document;
-	tmp.write("test");
-  }
-</script>
-<script>
-	$("#boot").click(function() {
-  $("nav").toggleClass("active");
-  $("li").toggleClass("active");
-  if($(this).text() == "☰") {
-    $(this).text("×");
-  }
-  else {
-    $(this).text("☰");
-  }
-})
-/* what your bootstrap should look like!
-<span>☰</span>
-	<nav>
-	 <ul>
-	 <li><a>Test</a></li>
-	 </ul>
-	</nav>
-*/
-
-</script>
-<style>
-li {
-	list-style-type: none;
-}
-</style>
