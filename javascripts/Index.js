@@ -117,8 +117,6 @@ delay: 250
 });
 
 
-/* BootStrap */
-<script>
 $("#boot").click(function() {
   $("#bootnav").toggleClass("active");
   $("#bootli").toggleClass("active");
@@ -128,4 +126,4 @@ $("#boot").click(function() {
   else {
     $(this).text("☰");
   }
-})
+});
