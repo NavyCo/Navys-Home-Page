@@ -28,8 +28,9 @@ list-style-type: none;
 }
 </style>
   <head>
+   <link rel="stylesheet" href="https:://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/style.css" type="text/css" />
+   <link rel="stylesheet" href="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/Bootstrap.css" type="text/css" />
   <style>
-  @import url(https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/Bootstrap.css);
   	Emoticon_JS {
   		Width: 45;
   		Height: 45;
@@ -39,7 +40,6 @@ list-style-type: none;
     <title>
       Title...
     </title>
-    <link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
   </head>
   <body>
   <style>
