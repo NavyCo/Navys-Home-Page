@@ -117,6 +117,7 @@ delay: 250
 
 $("#boot").click(function() {
   $("#bootnav").toggleClass("active");
+  $("#bootul").toggleClass("active");
   $("#bootli").toggleClass("active");
   if($(this).text() == "☰") {
     $(this).text("×");
