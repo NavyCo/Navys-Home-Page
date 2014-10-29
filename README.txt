@@ -1,5 +1,7 @@
 Make sure to put this in the header like area!
 ————————————————————————————————————————————————————————————————————————————————————————
+
+<!-- Start of the BootStrap -->
 <script src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/javascripts/Bootstrap.js">
 </script>
 <link src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/Bootstrap.css" type="text/css" />
@@ -14,4 +16,6 @@ Make sure to put this in the header like area!
     </ul>
   </nav>
 </div>
+<!-- End of the BootStrap -->
+
 ————————————————————————————————————————————————————————————————————————————————————————
