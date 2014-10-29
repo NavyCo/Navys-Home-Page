@@ -1,17 +1,82 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<html lang="en">
 <head>
-  <meta content="text/html;charset=ISO-8859-1"
- http-equiv="Content-Type">
-  <title>Nicholas Phillips</title>
-  <meta content="Nicholas Phillips" name="author">
-  <meta
- content="Death, Fire, Nothing, School, Fun, Nicholas, Phillips, Nicholas Phillips, School"
- name="description">
+<script>
+$("span").click(function() {
+$("nav").toggleClass("active");
+$("li").toggleClass("active");
+if($(this).text() == "☰") {
+$(this).text("×");
+}
+else {
+$(this).text("☰");
+}
+})
+/* what your bootstrap should look like!
+<span>☰</span>
+<nav>
+<ul>
+<li><a>Test</a></li>
+</ul>
+</nav>
+*/
+</script>
+<style>
+li {
+list-style-type: none;
+}
+</style>
+  <head>
+   <link rel="stylesheet" href="https:://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/style.css" type="text/css" />
+   <link rel="stylesheet" href="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/Bootstrap.css" type="text/css" />
+  <style>
+  	Emoticon_JS {
+  		Width: 45;
+  		Height: 45;
+  	}
+  </style>
+    <meta charset="UTF-8">
+    <title>
+      Title...
+    </title>
+  </head>
+  <body>
+  <style>
+  	@import url(http://weloveiconfonts.com/api/?family=brandico|entypo|fontawesome|fontelico|iconicfill|iconicstroke|maki|openwebicons|typicons|zocial);
+  </style>
+    <!-- Must put these at the top to have JQUERY! -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js">
+    </script>
+    <script src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/javascripts/Emoticons%20V2.js">
+    </script>
+    <script src="https://github.com/NavyCo/Navys-Home-Page/raw/gh-pages/javascripts/Footer.js">
+    </script>
+    <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js">
+    </script>
+    <link tooltip="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js">
+    </script>
+    <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js">
+    </script>
+    <script src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/javascripts/Index.js">
+    </script>
+<!-- Start of the BootStrap -->
+<script src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/javascripts/Bootstrap.js">
+</script>
+<link src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/Bootstrap.css" type="text/css" />
 </head>
+<div>
+<span>☰</span>
+  <nav>
+    <ul>
+      <li><a title="Home" href="http://navyco.github.io/Navys-Home-Page/"><i class="fa fa-2x fa-home"></i></a></li>
+      <li><a title="School" href="School"><i class="fa fa-2x fa-book"></i></a></li>
+      <li><li></li></li>
+      <li><a title="Refresh" onclick="location.reload()"><i class="fa fa-2x fa-refresh fa-spin"></i></a></li>
+    </ul>
+  </nav>
+</div>
+
 <body>
-<a title="test">
-Hello!
-</a>
-</body>
 </html>
