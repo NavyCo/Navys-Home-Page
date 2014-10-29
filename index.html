@@ -39,24 +39,15 @@
     <script src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/javascripts/Index.js">
     </script>
       <!-- Fancybox -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js">
+<script src="http://fancyapps.com/fancybox/source/jquery.fancybox.js">
 </script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js">
+<script src="http://fancyapps.com/fancybox/source/helpers/jquery.fancybox-buttons.js">
 </script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-media.js">
-</script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-thumbs.js">
-</script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-media.js">
-</script>
-<link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css" type="test/css" />
-<link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-buttons.css" type="test/css" />
+<link href="http://fancyapps.com/fancybox/source/jquery.fancybox.css" type="test/css" />
+<link href="http://fancyapps.com/fancybox/source/helpers/jquery.fancybox-buttons.css" type="test/css" />
 
 <script>
-$("[fancybox]").fancybox({
-  openEffect: 'elastic',
-  closeEffect: 'fade',
-});
+$("[fancybox]").fancybox();
 </script>
 <style>
 a.fancybox {
@@ -82,7 +73,7 @@ a.fancybox p:hover {
     <ul>
       <li><a tooltip="clip" title="Home Page" href="http://navyco.github.io/Navys-Home-Page/"><i class="fa fa-2x fa-home"></i></a></li>
       <li><a tooltip="clip" title="School Page" href="School"><i class="fa fa-2x fa-book"></i></a></li>
-      <li><a tooltip="clip" fancybox title="Contact Nicholas Phillips" href="#contactme" data-fancybox-title="Contact me!"><i class="fa fa-2x fa-envelope"></i></a></li>
+      <li><a tooltip="clip" title="Contact Nicholas Phillips" fancybox href="#contactme" data-fancybox-title="Contact me!"><i class="fa fa-2x fa-envelope"></i></a></li>
       <li><a tooltip="clip" title="Refresh Page" onclick="location.reload()"><i class="fa fa-2x fa-refresh fa-spin"></i></a></li>
     </ul>
   </nav>
@@ -132,10 +123,6 @@ li {
 }
 </style>
 
-<p fancybox title="test">
-  Hello.
-</p>
-
 <div id="contactme" hidden>
   <h3>Please contact me using one of the following!</h3>
   <table border="1" style="" cellpadding="3" cellspacing="3">
@@ -149,11 +136,3 @@ li {
 	</tr>
 </table>
   </div>
-<script>
-$("a.images").fancybox();
-</script>
-<a class="images" rel="group1" href="image_big_1.jpg"><img src="image_small_1.jpg" alt=""/></a>
-<a class="images" rel="group1" href="image_big_2.jpg"><img src="image_small_2.jpg" alt=""/></a>
-<a class="images" rel="group2" href="image_big_3.jpg"><img src="image_small_3.jpg" alt=""/></a>
-<a class="images" rel="group2" href="image_big_4.jpg"><img src="image_small_4.jpg" alt=""/></a>
-</a>
