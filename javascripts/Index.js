@@ -114,8 +114,6 @@ delay: 250
 }
 });
 
-});
-
 
 $("#boot").click(function() {
   $("#bootnav").toggleClass("active");
@@ -126,4 +124,5 @@ $("#boot").click(function() {
   else {
     $(this).text("☰");
   }
+});
 });
