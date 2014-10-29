@@ -7,7 +7,7 @@ Make sure to put this in the header like area!
 <nav>
 <ul>
 <li><a onclick="location.reload()"><i class="fa fa-2x fa-refresh fa-spin" title="Refresh"></i></a></li>
-<li><a href="/School/"><li>School Work</li></a></li>
+<li><a href="School"><i class="fa fa-book"></i>School</a></li>
 </ul>
 </nav>
 ————————————————————————————————————————————————————————————————————————————————————————
