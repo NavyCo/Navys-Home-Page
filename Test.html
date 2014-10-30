@@ -69,6 +69,19 @@
     });
 </script>
 <script>
+    $(function(){
+        $("Title").typed({
+            strings: [
+                "Test Page..."
+                ],
+            typeSpeed: 0, // typing speed
+            backSpeed: 0, // backspacing speed
+            loop: true, // loop on or off (true or false)
+            loopCount: 4, // number of loops, false = infinite
+        });
+    });
+</script>
+<script>
 window.onload = function() {
 var elem = document.getElementById('typed-cursor');
 elem.innerText = "_";
