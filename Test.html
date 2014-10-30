@@ -40,14 +40,24 @@
     $(function(){
         $(".element").typed({
             strings: [
-            "Test", 
+            "-_-", 
+            "-.-", 
+            "=3", 
+            ":3", 
+            "`-`", 
             "(　-_･) ︻デ═一  ▸",
             "0_0"
             ],
             typeSpeed: 0, // typing speed
             backSpeed: 0, // backspacing speed
             loop: true, // loop on or off (true or false)
-            loopCount: false, // number of loops, false = infinite
+            loopCount: 999, // number of loops, false = infinite
         });
     });
+</script>
+<script>
+window.onload = function() {
+var elem = document.getElementById('typed-cursor');
+elem.innerText = " ";
+}
 </script>
