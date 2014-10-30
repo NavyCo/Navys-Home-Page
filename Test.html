@@ -96,12 +96,11 @@ list-style-type: none;
 }
 </style>
 <script>
-  function test(a, b) {
-    var math = a*b;
-    alert( math );
+  function Ent_Create(Entity, Targetname) {
+    this.innerHTML = "Ent_Create " Entity " Targetname " Targetname
 }
 </script>
 
-<button name="BTN1" onclick="test(5, 2)" >
+<button name="BTN1" onclick="Ent_Create(env_fire, test)" >
 Click Me
 </button>
