@@ -1,11 +1,14 @@
 <style>
-  .typed-cursor{
+#typed-cursor{
     opacity: 1;
+    font-weight: 100;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
-@keyframes blink{
+@-keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
@@ -16,6 +19,16 @@
     100% { opacity:1; }
 }
 @-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
@@ -34,22 +47,26 @@
 <script type="text/javascript" src="http://www.mattboldt.com/demos/typed-js/js/typed.js"></script>
 <title>Test Page...</title>
 
+<ol>
+<li>
 <a class="element"></a>
+</li>
+</ol>
 
 <script>
     $(function(){
         $(".element").typed({
-            text: "Text",
+            strings: ["Test"],
             typeSpeed: 0, // typing speed
-            backSpeed: 30, // backspacing speed
+            backSpeed: 0, // backspacing speed
             loop: true, // loop on or off (true or false)
-            loopCount: false, // number of loops, false = infinite
+            loopCount: 4, // number of loops, false = infinite
         });
     });
 </script>
 <script>
-window.onload = function() {
+window.onclick = function() {
 var elem = document.getElementById('typed-cursor');
-elem.innerText = " ";
+elem.innerText = "_";
 }
 </script>
