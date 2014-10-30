@@ -1,4 +1,5 @@
-<script>
+<script type='text/javascript'>
+window.onload=function(){
 var str =
     '<table id="table1">' +
     '<tbody>' +
@@ -46,9 +47,11 @@ var str =
     if (txt === '<') isTag = true;
     if (txt === '>') isTag = false;
     if (isTag) return type();
-    setTimeout(type, 40);
+    setTimeout(type, 80);
 }());
 </script>
+
+
 <title>
 Tutorial - Creating Props
 </title>
