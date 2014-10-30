@@ -1,14 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url(https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/Bootstrap.css);
+Emoticon_JS {
+Width: 45;
+Height: 45;
+}
+</style>
+<meta charset="UTF-8">
+<title>
+Nicholas Phillips — Home
+</title>
+<link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
+</head>
+<body>
+<style>
+@import url(http://weloveiconfonts.com/api/?family=brandico|entypo|fontawesome|fontelico|iconicfill|iconicstroke|maki|openwebicons|typicons|zocial);
+</style>
+<!-- Must put these at the top to have JQUERY! -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js">
+</script>
+<script src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/javascripts/Emoticons%20V2.js">
+</script>
+<script src="https://github.com/NavyCo/Navys-Home-Page/raw/gh-pages/javascripts/Footer.js">
+</script>
+<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js">
+</script>
+<link tooltip="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js">
+</script>
+<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js">
+</script>
+<script src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/javascripts/Index.js">
+</script>
+<!-- Start of the BootStrap -->
+<script src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/javascripts/Bootstrap.js">
 </script>
 <link src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/Bootstrap.css" type="text/css" />
 <div>
 <span tooltip="normal" title="Click Me!!!">☰</span>
-<span tooltip="slide" title="Click Me!!!">☰</span>
 <nav>
 <ul>
 <li><a tooltip="normal" title="Home" href="http://navyco.github.io/Navys-Home-Page/"><i class="fa fa-2x fa-home"></i></a></li>
 <li><a tooltip="normal" title="School" href="School"><i class="fa fa-2x fa-book"></i></a></li>
-<li><a tooltip="normal" title="Coding" href="Coding"><i class="fa fa-terminal fa-2x fa-stack-1x fa-inverse"></i></a></li>
+<li><a tooltip="normal" title="Coding" href="Coding"><i class="fa fa-2x fa-terminal"></i></a></li>
+<li><a tooltip="normal" title="Test Page" href="Test"><i class="fa fa-2x fa-question-circle"></i></a></li>
 <li><a tooltip="normal" title="Refresh" onclick="location.reload()"><i class="fa fa-2x fa-refresh fa-spin"></i></a></li>
 </ul>
 </nav>
 </div>
+<!-- End of the BootStrap -->
+<body>
+</body>
+</html>
+<footer>
+Hello
+</footer>
+<style>
+a[button] {
+cursor:pointer;
+}
+</style>
+<script>
+function myFunction() {
+newwindow2=window.open('','name','height=auto,width=auto');
+var tmp = newwindow2.document;
+tmp.write("test");
+}
+</script>
+<script>
+$("span").click(function() {
+$("nav").toggleClass("active");
+$("li").toggleClass("active");
+if($(this).text() == "☰") {
+$(this).text("×");
+}
+else {
+$(this).text("☰");
+}
+})
+/* what your bootstrap should look like!
+<span>☰</span>
+<nav>
+<ul>
+<li><a>Test</a></li>
+</ul>
+</nav>
+*/
+</script>
+<style>
+li {
+list-style-type: none;
+}
+</style>
