@@ -1,1 +1,1 @@
-alert('test')
+document.innerHTML = "test";
