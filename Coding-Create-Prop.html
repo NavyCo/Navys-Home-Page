@@ -1,0 +1,56 @@
+<script>
+var str =
+    '<table id="table1">' +
+    '<tbody>' +
+    '<tr>' +
+    '<th style="text-align:center">Code</th>' +
+    '</tr>' +
+    '<tr>' +
+    '<td>' +
+    'Ent_Create ' +
+    ' ' +
+    '<span style="color:green">' +
+    'Prop_Dynamic' +
+    '</span>' +
+    ' ' +
+    '<q>' +
+    'Model' +
+    '</q>' +
+    ' ' +
+    '<q>' +
+    'Models/Alyx.mdl' +
+    '</q>' +
+    ' ' +
+    '<q>' +
+    'Targetname' +
+    '</q>' +
+    ' ' +
+    '<q>' +
+    'Name' +
+    '</q>' +
+    '' +
+    ''+
+    '</td>' +
+    '</tr>' +
+    '</tbody>' +
+    '</table>' +
+    '',
+    i = 0,
+    isTag,
+    text;
+(function type() {
+    text = str.slice(0, ++i);
+    if (text === str) return;
+    document.getElementById('t1').innerHTML = text;
+    var txt = text.slice(-1);
+    if (txt === '<') isTag = true;
+    if (txt === '>') isTag = false;
+    if (isTag) return type();
+    setTimeout(type, 40);
+}());
+</script>
+<title>
+Tutorial - Creating Props
+</title>
+<div id="t1">
+</div>
