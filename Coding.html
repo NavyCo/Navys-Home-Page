@@ -96,24 +96,13 @@
 li {
 	list-style-type: none;
 }
-[typed]
-{
-    width: 30em;
-    white-space:nowrap;
-    overflow:hidden;
-    -webkit-animation: type 5s steps(50, end);
-    animation: type 5s steps(50, end);
-}
-
-@keyframes type{
-    from { width: 0; }
-}
-
-@-webkit-keyframes type{
-    from { width: 0; }
-}
 </style>
+<script>
+  $(function(){
+      $("[tyoed]").typed();
+  });
+</script>
 <pre>Code</pre>
-<code typed id="wtf">
-	Ent_Create Prop_Dynamic Model Models/Alyx.mdl Targetname Name
-</code>
+<p typed id="wtf">
+	Ent_Create Prop_Dynamic "Model" "Models/Alyx.mdl" "Targetname" "Name"
+</p>
