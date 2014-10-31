@@ -2,7 +2,7 @@
 <html>
 <head>
 
-    <title>How to create a typewriter or typing effect with jQuery</title>
+    <title id="t1"></title>
     
     <style>
         body{
@@ -40,6 +40,22 @@
 
                 //we add the letter to the container
                 $('#container').html($('#container').html() + letter);
+            
+            }, 100*i);
+        });
+    </script>
+    <script>
+                //define text
+        var text = 'Contact me...';
+
+        //text is split up to letters
+        $.each(text.split(''), function(i, letter){
+
+            //we add 100*i ms delay to each letter 
+            setTimeout(function(){
+
+                //we add the letter to the container
+                $('#t1').html($('#t1').html() + letter);
             
             }, 100*i);
         });
