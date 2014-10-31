@@ -57,20 +57,23 @@
 <body>
     <span style="white-space:pre">I am a</span> <a class="element1" style="white-space:pre"></a>
 <script>
-    $(function(){
-        $(".element1").typed({
-            strings: ["First sentence.", "Second sentence."],
-            typeSpeed: 0, // typing speed
-            backSpeed: 0, // backspacing speed
-            startDelay: 0, // time before typing starts
-            backDelay: 500, // pause before backspacing
-            loop: true, // loop on or off (true or false)
-            loopCount: false, // number of loops, false = infinite
-            showCursor: true,
-            attr: null, // attribute to type, null = text for everything except inputs, which default to placeholder
-            callback: function(){ } // call function after typing is done
-        });
+$(function() {
+    $(".element1").typed({
+        strings: ["Phrase 1", "Phrase 2"],
+        typeSpeed: 50,
+        backDelay: 500,
+        loop: true,
+        // defaults to false for infinite loop
+        loopCount: false,
+        callback: function() {
+            foo();
+        }
     });
+
+    function foo() {
+        console.log("Callback");
+    }
+});
 </script>
 <script>
 window.onload = function() {
