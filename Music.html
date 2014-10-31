@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<div id="t1">
+	
+</div>
   <head>
   <style>
   @import url(https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/Bootstrap.css);
@@ -9,8 +12,6 @@
   	}
   </style>
     <meta charset="UTF-8">
-    <title id="title">
-    </title>
     <link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
   </head>
   <body>
@@ -98,7 +99,9 @@ $(this).text("☰");
 
 <script type='text/javascript'>
 var str =
-    'Nicholas Phillips - Music' +
+    '<title>' +
+    'Nicholas Phillips — Music' +
+    '</title>' +
     '',
     i = 0,
     isTag,
@@ -106,7 +109,7 @@ var str =
 (function type() {
     text = str.slice(0, ++i);
     if (text === str) return;
-    document.getElementById('title').innerHTML = text;
+    document.getElementById('t1').innerHTML = text;
     var txt = text.slice(-1);
     if (txt === '<') isTag = true;
     if (txt === '>') isTag = false;
