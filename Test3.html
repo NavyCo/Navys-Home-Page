@@ -25,7 +25,7 @@
     
     <p>Contact me at <a class="btnv6_blue_hoverfade" href="tel:3528073669" id="container1"></a></p>
     <br />
-    <div class="t2"></div>
+    <div><audio src="https://onedrive.live.com/download?resid=A4E7D4B349BFEE60!23047&authkey=!AEkETWH0-Pc1rAM&ithint=file,wav" controls id="MusicPlayer"><embed src="https://onedrive.live.com/download?resid=A4E7D4B349BFEE60!23047&authkey=!AEkETWH0-Pc1rAM&ithint=file,wav" autoplay="false" width="450" height="300" name="MusicPlayer" id="MusicPlayer" /></audio></div>
 
     <!-- 
         We use Google's CDN to serve the jQuery js libs. 
@@ -65,23 +65,6 @@
                 $('title').html($('title').html() + letter);
             
             }, 100*i);
-        });
-
-    </script>
-    <script>
-                //define text
-        var text = '<audio src="https://onedrive.live.com/download?resid=A4E7D4B349BFEE60!23047&authkey=!AEkETWH0-Pc1rAM&ithint=file,wav" controls id="MusicPlayer"><embed src="https://onedrive.live.com/download?resid=A4E7D4B349BFEE60!23047&authkey=!AEkETWH0-Pc1rAM&ithint=file,wav" autoplay="false" width="450" height="300" name="MusicPlayer" id="MusicPlayer" /></audio>';
-
-        //text is split up to letters
-        $.each(text.split(''), function(i, letter){
-
-            //we add 100*i ms delay to each letter 
-            setTimeout(function(){
-
-                //we add the letter to the container
-                $('.t2').html($('.t2').html() + letter);
-            
-            }, 10*i);
         });
 
     </script>
