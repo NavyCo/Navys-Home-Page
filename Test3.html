@@ -5,12 +5,15 @@
     <title id="t1"></title>
     
     <style>
-        body{
+        @import url(https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/style.css);
+        
+        body {
             text-align: center;
         }
         
-        #container{
+        #container1 {
             font-size: 24px;
+            font-family: 'Exo 2';
         }  
 
     </style>
@@ -18,7 +21,7 @@
 </head>
 <body>
     
-    <div id="container"></div>
+    <div>Contact me at <div id="container1"></div></div>
 
     <!-- 
         We use Google's CDN to serve the jQuery js libs. 
@@ -30,7 +33,7 @@
     <script>
             
         //define text
-        var text = 'Contact me at (352) 807-3669';
+        var text = 'Contact me at ';
 
         //text is split up to letters
         $.each(text.split(''), function(i, letter){
@@ -39,14 +42,14 @@
             setTimeout(function(){
 
                 //we add the letter to the container
-                $('#container').html($('#container').html() + letter);
+                $('#container1').html($('#container1').html() + letter);
             
             }, 100*i);
         });
     </script>
     <script>
                 //define text
-        var text = 'Contact me...';
+        var text = 'Contact me at...';
 
         //text is split up to letters
         $.each(text.split(''), function(i, letter){
@@ -55,7 +58,7 @@
             setTimeout(function(){
 
                 //we add the letter to the container
-                $('#t1').html($('#t1').html() + letter);
+                $('title').html($('title').html() + letter);
             
             }, 100*i);
         });
