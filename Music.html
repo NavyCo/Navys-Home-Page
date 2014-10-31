@@ -9,8 +9,7 @@
   	}
   </style>
     <meta charset="UTF-8">
-    <title typed>
-      Nicholas Phillips — Music
+    <title id="title">
     </title>
     <link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
   </head>
@@ -99,14 +98,21 @@ $(this).text("☰");
 </script>
 <script type="text/javascript" src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/javascripts/Index.js">
 
-<script>
-  $(function(){
-      $(".element").typed({
-        strings: ["First sentence.", "Second sentence."],
-        typeSpeed: 0
-      });
-  });
+<script type='text/javascript'>
+var str =
+    'Nicholas Phillips - Music' +
+    '',
+    i = 0,
+    isTag,
+    text;
+(function type() {
+    text = str.slice(0, ++i);
+    if (text === str) return;
+    document.getElementById('title').innerHTML = text;
+    var txt = text.slice(-1);
+    if (txt === '<') isTag = true;
+    if (txt === '>') isTag = false;
+    if (isTag) return type();
+    setTimeout(type, 80);
+}());
 </script>
-...
-
-<div class="element"></div>
