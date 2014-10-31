@@ -54,22 +54,21 @@
 
     <title></title>
 </head>
-
 <body>
-    <a class="element1" style="white-space:pre"></a> <script>
+    <a style="white-space:pre">I am a</a> <a class="element1" style="white-space:pre"></a>
 $(function(){
         $(".element1").typed({
-            strings: ["Test 1 2 3","o.o",],
+            strings: ["Coder","Scripter","Geek","Gamer","High Schooler",],
             typeSpeed: 0, // typing speed
             backSpeed: 0, // backspacing speed
             loop: true, // loop on or off (true or false)
-            loopCount: 4, // number of loops, false = infinite
+            loopCount: false, // number of loops, false = infinite
         });
     });
     </script> <script>
 window.onload = function() {
     var elem = document.getElementById('typed-cursor');
-    elem.innerText = "▸";
+    elem.innerText = "_";
     }
     </script>
 </body>
