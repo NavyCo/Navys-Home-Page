@@ -56,18 +56,23 @@
 </head>
 <body>
     <span style="white-space:pre">I am a</span> <a class="element1" style="white-space:pre"></a>
-    <script>
-$(function(){
+<script>
+    $(function(){
         $(".element1").typed({
-            strings: ["Coder","Scripter","Geek","Gamer","High Schooler",],
+            strings: ["First sentence.", "Second sentence."],
             typeSpeed: 0, // typing speed
             backSpeed: 0, // backspacing speed
+            startDelay: 0, // time before typing starts
+            backDelay: 500, // pause before backspacing
             loop: true, // loop on or off (true or false)
             loopCount: false, // number of loops, false = infinite
+            showCursor: true,
+            attr: null, // attribute to type, null = text for everything except inputs, which default to placeholder
             callback: function(){ } // call function after typing is done
         });
     });
-    </script> <script>
+</script>
+<script>
 window.onload = function() {
     var elem = document.getElementById('typed-cursor');
     elem.innerText = "_";
