@@ -1,65 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
 
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-
-    <title>Test</title>
+    <title>How to create a typewriter or typing effect with jQuery</title>
+    
     <style>
-@import url(http://fonts.googleapis.com/css?family=Cutive+Mono);
-
-    body {
-    font: 16px/20px 'Cutive Mono', serif;
-    }
-
-    a {
-    color: #222;
-    }
-
-    .wrap {
-    width: 500px;
-    margin: 30px auto;
-    text-align: center;
-    }
-
-    .test {
-    margin-top: 10px;
-    text-align: left;
-    }
+        body{
+            text-align: center;
+        }
+        
+        #container{
+            font-size: 24px;
+        }  
 
     </style>
-    <script>
-/**
-    * http://pixelhunter.me/
-    *
-    * text {String} - printing text
-    * n {Number} - from what letter to start
-    */
-    function typeWriter(text, n) {
-    if (n < (text.length)) {
-        $('.test').html(text.substring(0, n + 1));
-        n++;
-        setTimeout(function() {
-            typeWriter(text, n)
-        }, 100);
-    }
-    }
-    $('.start').click(function(e) {
-    e.stopPropagation();
-    var text = $('.test').data('text');
-    typeWriter(text, 0);
-    });
-    </script>
+
 </head>
-
 <body>
-    <div class="wrap">
-        <a class="start" href="#">Click to print</a>
+    
+    <div id="container"></div>
 
-        <div class="test" data-text=
-        "Augue ac adipiscing quis, arcu auctor! Elementum. Non vel vel augue odio et in et est, integer, porta sed parturient rhoncus habitasse! Et porttitor duis pulvinar pulvinar proin ac augue ac sagittis scelerisque, elementum integer eros. Sed, nec! Porta, dapibus in quis elementum penatibus adipiscing, nec adipiscing adipiscing purus lacus odio dolor diam a, elementum etiam? Placerat, etiam eros porttitor, tincidunt nunc sit nascetur purus risus sed adipiscing augue, porta a proin. Pid platea pid dignissim adipiscing dapibus dolor turpis placerat augue et urna, mauris porttitor ut ac, ut mid. Pid, est vut placerat mattis lectus! Mattis in mus, augue scelerisque in. In velit, dictumst ut mus tincidunt dapibus? Est, velit vel? Risus pulvinar penatibus ut amet sociis, est montes.">
+    <!-- 
+        We use Google's CDN to serve the jQuery js libs. 
+        To speed up the page load we put these scripts at the bottom of the page 
+    -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    
+    <script>
+            
+        //define text
+        var text = 'Contact me at (352) 807-3669';
 
-        </div>
-    </div>
+        //text is split up to letters
+        $.each(text.split(''), function(i, letter){
+
+            //we add 100*i ms delay to each letter 
+            setTimeout(function(){
+
+                //we add the letter to the container
+                $('#container').html($('#container').html() + letter);
+            
+            }, 100*i);
+        });
+
+    </script>
+
 </body>
 </html>
