@@ -1,18 +1,13 @@
-<html>
-<head>
+<!DOCTYPE html><html><head>
 <style>
-@import url(https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/Bootstrap.css);
-Emoticon_JS {
-Width: 45;
-Height: 45;
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	height: 100%;
 }
-</style>
-<style>
-html {
-	Top: 60px;
-	Left: 60px;
-	Right: 60px;
-	Bottom: 60px;
+body {
+	background-color: #000000;
 }
 .tarea {
 	width: 100%;
@@ -38,69 +33,27 @@ html {
 	color: #ffffff;
 }
 </style>
-<meta charset="UTF-8">
-<title>
-Nicholas Phillips — Server
-</title>
-<link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
+<script type="text/javascript">
+	function getQueryVariable(variable)
+	{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+	}
+</script>
 </head>
 <body>
-<style>
-@import url(http://weloveiconfonts.com/api/?family=brandico|entypo|fontawesome|fontelico|iconicfill|iconicstroke|maki|openwebicons|typicons|zocial);
-</style>
-<!-- Must put these at the top to have JQUERY! -->
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/jquery-1.10.2.js">
-</script>
-<script src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/javascripts/Emoticons%20V2.js">
-</script>
-<script src="https://github.com/NavyCo/Navys-Home-Page/raw/gh-pages/javascripts/Footer.js">
-</script>
-<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js">
-</script>
-<link tooltip="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/jquery-1.10.2.js">
-</script>
-<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js">
-</script>
-<script src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/javascripts/Index.js">
-</script>
-<!-- Start of the BootStrap -->
-<script src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/javascripts/Bootstrap.js">
-</script>
-<link src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/Bootstrap.css" type="text/css" />
-<body>
-</body>
-</html>
-<div class="olay"><div id="t1" class="t1"></div><div class="msg">
-<h1>Have a good day! LOL</h1>
-<footer>
-<div id="t1">
-</div>
-</footer>
-</div>
-<style>
-a[button] {
-cursor:pointer;
-}
-</style>
+<div class="olay"><div class="title">Navy's Server!</div><div class="msg"><br>
+<ul>
+<li><h3>Test Server</h3></li>
+<li><h3>============</h3></li>
+<li><h3>Cheat Server</h3></li>
+</ul>
+</div></div>
+<textarea class="tarea"></textarea>
 
-    <script>
-        //define text
-        var text = "Hey! Welcome to Navy's Cheat Server!";
-
-        //text is split up to letters
-        $.each(text.split(''), function(i, letter){
-
-            //we add 100*i ms delay to each letter 
-            setTimeout(function(){
-
-                //we add the letter to the container
-                $('#t1').html($('#t1').html() + letter);
-            
-            }, 100*i);
-        });
-    </script>
-
-</body>
-</html>
+</body></html>
