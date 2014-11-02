@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+
+    <title></title>
+    <style src="http://fonts.googleapis.com/css?family=Cutitive|Special+Elite|Poiret+One|Gloria+Hallelujah|Anton|Dancing+Script|Droid+Sans+Mono|Exo|Exo+2|New+Rocker|Neuton|Neucha|News+Cycle|Niconne|Norican|Nosifer|Nothing+You+Could+Do|Nova+Mono|Nova+Oval|Cinzel+Decorative|Codystar|Kelly+Slab|Reenie+Beanie|Geostar|Wallpoet|Geostar+Fill|Stalinist+One|Euphoria+Script|Press+Start+2P|VT323|Lobster|Black+Ops+One"></style>
+    <style src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/style.css"></style>
+    <style>
+        @import url(https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/style.css);
+        @import url(http://fonts.googleapis.com/css?family=Poiret+One|Gloria+Hallelujah|Anton|Dancing+Script|Droid+Sans+Mono|Exo|Exo+2|New+Rocker|Neuton|Neucha|News+Cycle|Niconne|Norican|Nosifer|Nothing+You+Could+Do|Nova+Mono|Nova+Oval|Cinzel+Decorative|Codystar|Kelly+Slab|Reenie+Beanie|Geostar|Wallpoet|Geostar+Fill|Stalinist+One|Euphoria+Script|Press+Start+2P|VT323|Lobster|Black+Ops+One);
+        @import url(http://weloveiconfonts.com/api/?family=brandico|entypo|fontawesome|fontelico|iconicfill|iconicstroke|maki|openwebicons|typicons|zocial);
+
+        body {
+            text-align: center;
+        }
+        #container1 {
+            font-family: "Nova Square";
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="t1"></div>
+    <br />
+    <div><audio src="https://onedrive.live.com/download?resid=A4E7D4B349BFEE60!23047&authkey=!AEkETWH0-Pc1rAM&ithint=file,wav" controls id="MusicPlayer"><embed src="https://onedrive.live.com/download?resid=A4E7D4B349BFEE60!23047&authkey=!AEkETWH0-Pc1rAM&ithint=file,wav" autoplay="false" width="450" height="300" name="MusicPlayer" id="MusicPlayer" /></audio></div>
+
+    <!-- 
+        We use Google's CDN to serve the jQuery js libs. 
+        To speed up the page load we put these scripts at the bottom of the page 
+    -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    
+    <script>
+        //define text
+        var text = "Hey! Welcome to Navy's Cheat Server!";
+
+        //text is split up to letters
+        $.each(text.split(''), function(i, letter){
+
+            //we add 100*i ms delay to each letter 
+            setTimeout(function(){
+
+                //we add the letter to the container
+                $('#t1').html($('#t1').html() + letter);
+            
+            }, 100*i);
+        });
+    </script>
+
+</body>
+</html>
+
