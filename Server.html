@@ -7,6 +7,40 @@ Width: 45;
 Height: 45;
 }
 </style>
+<style>
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	height: 100%;
+}
+body {
+	background-color: #000000;
+}
+.tarea {
+	width: 100%;
+	height: 100%;
+}
+.olay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 1px;
+	bottom: 1px;
+	z-index: 1337;
+}
+.title {
+	background-color: rgba(0,0,0,0.5);
+	font-size: 250%;
+	text-align: center;
+	color: #ffffff;
+}
+.msg {
+	background-color: rgba(0,0,0,0.4);
+	text-align: center;
+	color: #ffffff;
+}
+</style>
 <meta charset="UTF-8">
 <title>
 Nicholas Phillips — Server
@@ -38,6 +72,7 @@ Nicholas Phillips — Server
 <script src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/javascripts/Bootstrap.js">
 </script>
 <link src="https://raw.githubusercontent.com/NavyCo/Navys-Home-Page/gh-pages/stylesheets/Bootstrap.css" type="text/css" />
+<div class="olay"><div id="t1" class="t1"></div><div class="msg">
 <div>
 <span tooltip="normal" title="Click Me!!!">☰</span>
 <nav>
@@ -111,6 +146,6 @@ list-style-type: none;
             }, 100*i);
         });
     </script>
-
+</div>
 </body>
 </html>
